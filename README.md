@@ -29,19 +29,19 @@ The idea here is to train a CNN model on images of dogs and predict the breed of
  
 
 ### File Descriptions <a name='descriptions'>:
-The READEME.md file is a guide through the project.
-The dog_app.py file is for model training.
-The dog_app.html file is a notebook of the training and visualization, it describes how the model is trained.
-The predict.py file is the executable for running the program on unseen images.
-The saved_model directory contains the best fitted model on the training data test accuracy.
-The LICENSE file is present to specify access.
+The READEME.md file is a guide through the project.<br>
+The dog_app.py file is for model training.<br>
+The dog_app.html file is a notebook of the training and visualization, it describes how the model is trained.<br>
+The predict.py file is the executable for running the program on unseen images.<br>
+The saved_model directory contains the best fitted model on the training data test accuracy.<br>
+The LICENSE file is present to specify access.<br>
 
 ### Instructions <a name='Instructions'>:
 1. Run the following commands in the project's root directory to set up your model and visualize the results in notebook.
 
-    - To train and save the model. You can skip this as trained data is not in the repository.
+    - To train and save the model. You can skip this as trained data is not in the repository.<br>
         `python dog_app.py`
-    - To run validation on existing data as we don't have validation data available we will take from training dataset and verify.
+    - To run validation on existing data as we don't have validation data available we will take from training dataset and verify.<br>
         `python predict.py <image_path>`
 
 
