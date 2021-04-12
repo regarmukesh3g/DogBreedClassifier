@@ -53,4 +53,7 @@ We are able to identify breed of a dog with an acceptable accuracy.
 
 ### Future Improvement 
 The model can be improved with more data.
-A webapp can be created where user will put image and we will predict the dog breed.
+
+### Github details
+Github Repo:- https://github.com/regarmukesh3g/DogBreedClassifier
+Clone Url:- https://github.com/regarmukesh3g/DogBreedClassifier.git
