@@ -13,11 +13,11 @@
 The requierement for this project is as following:- <br>
  1. Python 3.8 .
  2. pandas.
- 3. openv-python
- 4. torch
- 5. torchvision
+ 3. openv-python.
+ 4. torch.
+ 5. tensorflow.
  6. tqdm.
- 7. PIL
+ 7. PIL.
  
 The project root directory must be on pythonpath
  
@@ -41,9 +41,10 @@ The LICENSE file is present to specify access.<br>
 
     - To train and save the model. You can skip this as trained data is not in the repository.<br>
         `python dog_app.py`
-    - To run validation on existing data as we don't have validation data available we will take from training dataset and verify.<br>
-        `python predict.py <image_path>`
-
+    - To run the webapp run below command.<br>
+        `python webapp/run.py>`
+        
+    - Open http://0.0.0.0:3001 on your computer and upload picture of a dog to predict it's breed.
 
 
 ### Results <a name='Results'>:

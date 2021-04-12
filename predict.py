@@ -4,19 +4,12 @@ import argparse
 import cv2
 import matplotlib.pyplot as plt
 import torch
-from keras.utils import np_utils
 import numpy as np
-from glob import glob
-from torchvision import models
-from torchvision import transforms
-from torch import nn
-from torch.utils.data import Dataset
+
 from PIL import Image
-from torchvision import datasets, transforms, models
-from keras.applications.resnet50 import preprocess_input, decode_predictions
-from keras.layers import Conv2D, MaxPooling2D, GlobalAveragePooling2D
-from keras.layers import Dropout, Flatten, Dense
-from keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, GlobalAveragePooling2D
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.models import Sequential
 
 
 def get_parser():
@@ -43,12 +36,12 @@ def face_detector(img_path):
     return len(faces) > 0
 
 
-from keras.applications.resnet50 import ResNet50
+from tensorflow.keras.applications.resnet50 import ResNet50
 
 # define ResNet50 model
 ResNet50_model = ResNet50(weights='imagenet')
 
-from keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 from tqdm import tqdm
 
 def path_to_tensor(img_path):
@@ -59,7 +52,7 @@ def path_to_tensor(img_path):
     # convert 3D tensor to 4D tensor with shape (1, 224, 224, 3) and return 4D tensor
     return np.expand_dims(x, axis=0)
 
-from keras.applications.resnet50 import preprocess_input, decode_predictions
+from tensorflow.keras.applications.resnet50 import preprocess_input, decode_predictions
 
 def ResNet50_predict_labels(img_path):
     # returns prediction vector for image located at img_path
